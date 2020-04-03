@@ -1,18 +1,31 @@
-# _{Animal Shelter}_
+# _Animal Shelter_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _An API that allows you to cread, read, update, and delete animal object from a shelter databasse, 04/03/2020_
 
-#### By _**{List of contributors}**_
+#### By _**Patrick Delaney**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_Using this API, you can create/edit your own animal shelter! At the moment, the only species are dogs and cats. Feel free to add more! You have the ability to edit, create, observe, and delete objects in the databse through this API._
 
 ## Specs
 
-* Behavior:
-	* Input:
-	* Output:
+* Behavior: User is able to view objects within the database.
+  * Input: "API call to view object(s) within the database."
+  * Output: *Requested object(s) are returned to the user from the databse*
+
+* Behavior: An object will be added to a databse through the API.
+	* Input: "Create an animal object."
+	* Output: *Object is stored in the database for future reference.*
+
+* Behavior: An object will be deleted from the database using the API.
+  * Input: "Delete an animal object."
+  * Output: *Object is removed from the database through the API.*
+
+* Behavior: User is able to edit objects within the database.
+  * Input: "API put request is made to the API containing a body of the edited object"
+  * Output: *Object with that id is updated to match the user's put request.*
+
 
 ## Setup/Installation Requirements
 
