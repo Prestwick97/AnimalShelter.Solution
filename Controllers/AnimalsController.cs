@@ -30,12 +30,12 @@ namespace AnimalShelter.Controllers
 
       if (gender != null)
       {
-        query = query.Where(entry => entry.Species == gender);
+        query = query.Where(entry => entry.Gender == gender);
       }
 
       if (name != null)
       {
-        query = query.Where(entry => entry.Species == name);
+        query = query.Where(entry => entry.Name == name);
       }
 
       return _db.Animals.ToList();
