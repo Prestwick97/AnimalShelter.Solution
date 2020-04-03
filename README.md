@@ -29,30 +29,40 @@ _Using this API, you can create/edit your own animal shelter! At the moment, the
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* _1. CLone the repository containing the API._
+  * Open your command terminal, navigate to the desktop directory and enter the following command: `> git clone https://github.com/Prestwick97/AnimalShelter.Solution.git`.
+* _2. After cloning the repository, navigate to the project directory of the repository._
+  * `> cd AnimalShelter.Solution`
+  * `> cd AnimalShelter`
+* _3. Once you're inside the project directory, migrate the data to form a database in MySQL._
+  * `> dotnet ef migrations add Initial`
+  * `> dotnet ef database update`
+  * _You now have the database neccessary to use the API!_
+* _Now feel free to C.R.U.D. away using Postman, or by building an interface._
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_At the moment, there are no known bugs._
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you have any questions, suggestions, comments, or concerns, feel free to contact me at prestwick97@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* _C#_
+* _.NETcore scaffolding_
+* _json_
+* _MVC_
+* _Postman_
+* _API versioning_
+* _SwaggerEditer_
+* _VScode_
+* _MySQL_
+* _MySQL Workbench_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*Licensed under the open source MIT license*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
-Licensing
-An open source license details how others can use your code. MIT and GPL are the most common licenses. An MIT license means your code is free to use by anyone and you are not liable (Rails and jQuery use an MIT license). GPL also indicates free usage of the code but when used, the resulting work MUST be open source (Linux, Git and Wordpress use GPL).
+Copyright (c) 2020 **_Patrick S. Delaney_**
