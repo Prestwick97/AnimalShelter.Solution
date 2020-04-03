@@ -26,7 +26,8 @@ _Using this API, you can create/edit your own animal shelter! At the moment, the
   * Input: "API put request is made to the API containing a body of the edited object"
   * Output: *Object with that id is updated to match the user's put request.*
 
-
+## Documentation
+_ To view documentation for this API, use this link(https://app.swaggerhub.com/apis/PatterCat666/animal-shelter/0.1) to view the documentation produced by Swagger.
 ## Setup/Installation Requirements
 
 * _1. CLone the repository containing the API._
