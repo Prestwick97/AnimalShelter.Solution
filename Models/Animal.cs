@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 namespace AnimalShelter.Models
 {
   public class Animal
@@ -9,6 +10,8 @@ namespace AnimalShelter.Models
     public string Gender { get; set; }
  
     public string Name { get; set; }
+    [Required]
+    [StringLength(1000, ErrorMessage = "stop")]
     public string Info { get; set; }
   }
 }
