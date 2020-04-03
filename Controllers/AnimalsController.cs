@@ -39,7 +39,7 @@ namespace AnimalShelter.Controllers
         query = query.Where(entry => entry.Name == name);
       }
 
-      return _db.Animals.ToList();
+      return query.ToList();
     }
     // GET api/animals/id
     [HttpGet("{id}")]

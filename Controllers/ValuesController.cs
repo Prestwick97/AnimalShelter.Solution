@@ -28,6 +28,7 @@ namespace AnimalShelter.Controllers
     [HttpPost]
     public void Post([FromBody] string value)
     {
+      Console.WriteLine(value);
     }
 
     // PUT api/values/5
