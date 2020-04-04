@@ -27,7 +27,9 @@ _Using this API, you can create/edit your own animal shelter! At the moment, the
   * Output: *Object with that id is updated to match the user's put request.*
 
 ## Documentation
-_ To view documentation for this API, use this link(https://app.swaggerhub.com/apis/PatterCat666/animal-shelter/0.1) to view the documentation produced by Swagger.
+_ To view documentation for this API, use the following links to view the documentation produced by Swagger. Version 1.0:(https://app.swaggerhub.com/apis/PatterCat666/animal-shelter/0.1), version 2.0: (https://app.swaggerhub.com/apis/PatterCat666/animal-shelter/0.2)._
+
+
 ## Setup/Installation Requirements
 
 * _1. CLone the repository containing the API._
@@ -43,7 +45,17 @@ _ To view documentation for this API, use this link(https://app.swaggerhub.com/a
 
 ## Known Bugs
 
-_At the moment, there are no known bugs._
+_At the moment, even though you can search for a specific age in version 2.0 of the API (AnimalsTwoController), when you try to request animals within a range of ages, you get the following error:_
+`{`
+    `"errors": {`
+        `"id": [`
+            `"The value 'age' is not valid."`
+        `]`
+    `},`
+    `"title": "One or more validation errors occurred.",`
+    `"status": 400,`
+    `"traceId": "0HLUO4T0R5API:00000006"`
+`}`
 
 ## Support and contact details
 
