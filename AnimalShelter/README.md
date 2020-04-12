@@ -6,7 +6,7 @@
 
 ## Description
 
-_Using this API, you can create/edit your own animal shelter! At the moment, the only species are dogs and cats. Feel free to add more! You have the ability to edit, create, observe, and delete objects in the databse through this API._
+_Using this API, you can create/edit your own animal shelter! At the moment, the only species are dogs and cats. Feel free to add more! You have the ability to edit, create, observe, and delete objects in the database through this API._
 
 ## Specs
 
@@ -29,6 +29,48 @@ _Using this API, you can create/edit your own animal shelter! At the moment, the
 ## Documentation
 _ To view documentation for this API, use the following links to view the documentation produced by Swagger. Version 1.0:(https://app.swaggerhub.com/apis/PatterCat666/animal-shelter/0.1), version 2.0: (https://app.swaggerhub.com/apis/PatterCat666/animal-shelter/0.2)._
 
+## Versioning
+_ There are two versions of this API. Version two has all of the same endpoints at version one, with the addition of age parameters. In version two, you may enter an exact age for an animal; or you may enter a range(ex. ages: 2-20). You indicate which version you're using within the URL of the API call.(/api/{api version}/animals). _
+## Endpoints and making requests
+HTTP Request Routes
+REQUEST: CRUD/api/{api version(1-2)}/animals/{id}
+REQUEST: CRUD/api/{api version(1-2)}/animals/?parameter
+
+GET /api/{version}/animals
+* Get a list of all animals.
+
+GET /api/{version}/animals/{id}
+* Get a specific animal via it's ID from the database.
+
+POST /api/{version}/animals
+* Post an animal to the database.
+
+PUT /api/{version}/animals/{id}
+* Edit a specific animal from the database.
+
+DELETE /api/{version}/animals/{id}
+* Delete a specific animal from the database.
+
+_Version One Parameters:_
+| Parameter | Type | Description |
+| :---: | :---: | :---: | --- |
+| name | string | Query animal by name. |
+| species | string | Query animal by species. |
+| gender | string | Query animal by gender. |
+| age | int | Query animal by age. |
+
+_Additional parameters using Version Two:_
+| Parameter | Type | Description |
+| :---: | :---: | :---: | --- |
+| start | int | Query animal by age older than this number. |
+| age | int | Query animal by age. |
+| end | int | Query animal by age younger than this number. |
+
+
+Example Queries:
+http://localhost:5000/api/1/animals/?species=dog
+http://localhost:5000/api/2/animals/?parameter
+http://localhost:5000/api/1/animals/?parameter1&parameter2
 
 ## Setup/Installation Requirements
 
@@ -45,7 +87,7 @@ _ To view documentation for this API, use the following links to view the docume
 
 ## Known Bugs
 
-_At the moment, even though you can search for a specific age in version 2.0 of the API (AnimalsTwoController), when you try to request animals within a range of ages, you get the following error:_
+_At the moment, even though you can search for a specific age in version 2.0 of the API (AnimalsTwoController), when you try to request animals within a range of ages (http://localhost:5000/api/2.0/animals/age/?start=01-01-2012&end=01-31-2019), you get the following error:_
 `{`
     `"errors": {`
         `"id": [`
